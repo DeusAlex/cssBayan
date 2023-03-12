@@ -1,0 +1,54 @@
+body {
+    background-color: blanchedalmond;
+  }
+  .header {
+    background: none;
+    border: 0;
+    text-decoration: solid;
+    font-size: 2rem;
+    margin: 1em 25% 0.5em;
+  }
+  .button {
+    border: none;
+    outline: 0;
+    background-color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+    
+  }
+  p:focus {
+    background-color: aqua;
+  }
+  .row {
+    display: block;
+    margin: 0.2em 25% 0;
+    cursor: crosshair;
+  }
+  #hidden {
+    display: none;
+    /* height: auto; */
+    overflow: hidden;
+    text-align: center;
+    transition: background-color 2s ease-out 100ms
+  }
+  :hover + #hidden {
+    display: block;
+  }
+  img {
+    height: 40%;
+    width: 40%;
+    opacity: 1;
+    transition: 0.1s ease-out;
+  }
+  p {
+    background-color: rgb(212, 196, 171);
+    border: 0.1rem solid;
+    padding: 0.6rem;
+    font-size: 2rem;
+    margin: 0.3rem;
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    text-align: left;
+  }
