@@ -16,9 +16,6 @@ body {
     padding: 0;
     
   }
-  p:focus {
-    background-color: aqua;
-  }
   .row {
     display: block;
     margin: 0.2em 25% 0;
@@ -26,7 +23,6 @@ body {
   }
   #hidden {
     display: none;
-    /* height: auto; */
     overflow: hidden;
     text-align: center;
     transition: background-color 2s ease-out 100ms
@@ -37,8 +33,8 @@ body {
   img {
     height: 40%;
     width: 40%;
-    opacity: 1;
-    transition: 0.1s ease-out;
+    animation-name: anima;
+    animation-duration: 2s;
   }
   p {
     background-color: rgb(212, 196, 171);
@@ -52,3 +48,7 @@ body {
     width: 100%;
     text-align: left;
   }
+  @keyframes anima {
+    from {opacity: 0;}
+    to {opacity: 1;}
+   }
